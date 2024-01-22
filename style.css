@@ -34,6 +34,7 @@ body{
 }
 .wrapper i:first-child{
     left: -23px;
+    display: none;
 }
 .wrapper i:last-child{
     right: -23px;
@@ -43,6 +44,14 @@ body{
     font-size: 0px;
     cursor: pointer;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+.carousel.dragging img{
+    pointer-events: none;
 }
 .carousel img{
     height: 340px;
